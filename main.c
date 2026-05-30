@@ -12,6 +12,14 @@ int main(void)
 {
 	DDRC=0x3F;
 	PORTC=0x1;
+	
+	DDRD=0x60;
+	
+	TCCR0A=0xA3;
+	TCCR0B=0x2;
+	OCR0A=0x80;
+	OCR0B=0x80;
+
 
     while(1)
     {
